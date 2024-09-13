@@ -1,14 +1,25 @@
-div {
-    border: 1px dashed #e0354b;
-    padding: 2vh;
-    position: relative;
-    margin: 2vh;
+.Notifications {
+    border: 2px dashed var(--holb-red);
+    padding: 24px;
 }
 
-li[data-priority="default"] {
+.Notifications ul {
+    list-style-type: none;
+}
+
+.Notifications ul li {
+    list-style-type: disc;
+}
+
+.Notifications ul li[data-priority="default"] {
     color: blue;
 }
 
-li[data-priority="urgent"] {
+.Notifications ul li[data-priority="urgent"] {
     color: red;
+}
+
+.Notifications ul li:nth-last-child(1) {
+    color: red;
+    font-size: 18px;
 }

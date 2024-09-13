@@ -1,33 +1,33 @@
-import logo from './hbnb-logo.jpg';
+import logo from './holberton-logo.jpg';
 import './App.css';
 import { getFullYear, getFooterCopy } from './utils';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="hbnb-logo" alt="hbnb-logo" />
+      <div className="App-header">
+        <img src={logo} alt="Holberton Logo: Red Seahorse"/>
         <h1>School dashboard</h1>
-      </header>
-      <hr className='hr-1'/>
-      <boby className="App-body">
-        <p> 
-          Login to access the full dashboard.
-        </p>
-          <form>
-            <label htmlFor="email">Email</label>
-            <input type="email" id="email" name="email" />
-            <label htmlFor="password">Password</label>
-            <input type="password" id="password" name="password" />
-            <button type="submit">OK</button>
-          </form>
-      </boby>
-      <hr className='hr-2'/>
-      <footer className="App-footer">
-        <p>
-          Copyright {getFullYear()} - {getFooterCopy(true)}
-        </p>
-      </footer>
+      </div>
+        <div className="App-body">
+        <p>Login to access the full dashboard</p>
+        <div className="form">
+          <label htmlFor="email">
+            <span>Email:</span>
+            <input type="email" name="email" id="email" />
+          </label>
+
+          <label htmlFor="password">
+            <span>Password:</span>
+            <input type="password" name="password" id="pwd" />
+          </label>
+
+          <button onClick={() => {}}>OK</button>
+        </div>
+      </div>
+        <div className="App-footer">
+        <p>Copyright {getFullYear()} - {getFooterCopy(true)}</p>
+      </div>
     </div>
   );
 }

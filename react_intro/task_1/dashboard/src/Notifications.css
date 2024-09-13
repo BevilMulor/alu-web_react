@@ -1,4 +1,4 @@
-div {
-    border: 1px solid #000;
-    padding: 2vh;
+.Notifications {
+    border: 2px solid lightgrey;
+    padding: 24px;
 }

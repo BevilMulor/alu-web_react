@@ -1,43 +1,47 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: sans-serif;
-  font-size: 2vh;
+}
+
+:root {
+  --holb-red: #FF0000;
 }
 
 .App-header {
-  min-width: 5vh;
+  background-color: white;
   display: flex;
-}
-
-.App-header .hbnb-logo {
-  height: 25vh;
-  margin-right: 10vh;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  border-bottom: 4px solid var(--holb-red);
 }
 
 .App-header h1 {
-  font-size: 5vh;
-  align-self: center;
-  color: #e0354b;
-  font-weight: bold;
+  max-width: fit-content;
+  color: var(--holb-red);
 }
 
-.App hr {
-  border: none;
-  border-bottom:0.5vh solid #e0354b;
-}
+/* App-body */
 
 .App-body {
-  display: flex;
-  justify-content: start;
-  align-items: start;
-  height: 60vh;
+  min-height: 60vmin;
+  padding: 32px;
 }
 
 .App-body p {
-  margin: 5vh;
+  font-weight: bold;
 }
 
+/* App-footer */
+
 .App-footer {
-  display: block;
-  margin: 5vh;
+  font-style: italic;
+  border-top: 4px solid var(--holb-red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 5vmin;
 }
